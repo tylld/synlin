@@ -1,0 +1,36 @@
+{
+  "name": "synlin",
+  "version": "0.1.0",
+  "description": "CLI for managing a personal library of AI coding-agent config items (skills, agents, commands, rules, templates) and installing them into projects for Claude Code, Codex, Cursor, and OpenCode",
+  "type": "module",
+  "bin": {
+    "synlin": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "seed": "tsx scripts/seed.ts"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.5.1",
+    "commander": "^14.0.3",
+    "gray-matter": "^4.0.3",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.0",
+    "vitest": "^4.1.8"
+  }
+}
