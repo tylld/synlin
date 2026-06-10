@@ -4,7 +4,7 @@
   "description": "CLI for managing a personal library of AI coding-agent config items (skills, agents, commands, rules, templates) and installing them into projects for Claude Code, Codex, Cursor, and OpenCode",
   "type": "module",
   "bin": {
-    "synlin": "./dist/index.js"
+    "synlin": "dist/index.js"
   },
   "files": [
     "dist"
